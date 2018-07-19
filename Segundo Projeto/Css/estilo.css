@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f3f3f3;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+}
+a:link {
+	color: #838383;
+}
+a:visited {
+	color: #838383;
+}
+a:hover {
+	color: #fff;
+	background-color: #b9c941;
+}
+a:active {
+	color: #535353;
+}
+/* Id's */
+#bar {
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #d8d8d8;
+}
+#area-bar {
+	width: 720px;
+	margin: 0 auto;
+}
+#logo {
+	float: left;
+}
+#catalog {
+	float: right;
+	margin-top: 10px;
+}
+#main-area {
+	width: 720px;
+	margin: 55px auto 10px auto;
+}
+/* Classes */
+.green {
+	color: #b9c941;
+}
+.post {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.post-date {
+	font-size: 12px;
+	border-bottom: 1px solid #f4f4f4;
+	margin-bottom: 5px;
+	display: block;
+}
+.post-image {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.post-author {
+	border-left: 5px solid gray;
+	padding-left: 5px;
+	margin-top: 10px;
+	display: block;
+
+}

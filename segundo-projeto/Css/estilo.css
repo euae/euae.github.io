@@ -20,7 +20,7 @@ a:visited {
 }
 a:hover {
 	color: #fff;
-	background-color: #b9c941;
+	background-color: #42F6FF;
 }
 a:active {
 	color: #535353;
@@ -51,7 +51,7 @@ a:active {
 }
 /* Classes */
 .green {
-	color: #b9c941;
+	color: #42F6FF;
 }
 .post {
 	background-color: #fff;

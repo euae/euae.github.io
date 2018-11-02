@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jogo da velha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	</head>
+
+	<body>
+		<div id="registration_screen" align="center">
+			<table style="width: 600px;">
+				<tr>
+					<td colspan="3" style="text-align: center;">JOGO DA VELHA</td>
+				</tr>
+				<tr id="tr2">
+					<td>
+						<img src="imagens\jogador_1.png">
+						<br>
+						<input type="text" placeholder="Apelido jogador 1" style="border: 0px;" id="input_1">
+					</td>
+					<td><img src="imagens\iniciar.png" id="start_button"></td>
+					<td>
+						<img src="imagens\jogador_2.png">
+						<br>
+						<input type="text" placeholder="Apelido jogador 2" style="border: 0px;" id="input_2">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="game" align="center">
+			<div>
+				<img src="imagens\jogador_1.png">
+				<br>
+				<span id="span_input_1"></span>
+			</div>
+			<div>
+				<table style="border-collapse: collapse; margin: 50px;">
+					<tr>
+						<td class="bottom_right"><div class="interaction_area" id="a-1"></div></td>
+						<td class="bottom_right"><div class="interaction_area" id="a-2"></div></td>
+						<td class="bottom"><div class="interaction_area" id="a-3"></div></td>
+					</tr>
+					<tr>
+						<td class="bottom_right"><div class="interaction_area" id="b-1"></div></td>
+						<td class="bottom_right"><div class="interaction_area" id="b-2"></div></td>
+						<td class="bottom"><div class="interaction_area" id="b-3"></div></td>
+					</tr>
+					<tr>
+						<td class="right"><div class="interaction_area" id="c-1"></div></td>
+						<td class="right"><div class="interaction_area" id="c-2"></div></td>
+						<td><div class="interaction_area" id="c-3"></div></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<img src="imagens\jogador_2.png">
+				<br>
+				<span id="span_input_2"></span>
+			</div>
+		</div>
+	</body>
+</html>

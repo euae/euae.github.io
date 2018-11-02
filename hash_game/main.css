@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*ID's*/
+#registration_screen {
+    margin-top: 25px; 
+}
+
+#tr2 > td {
+    text-align: center;
+}
+
+#game > div {
+    display: inline-block;
+}
+
+#game {
+    display: none;
+}
+
+/*Classes*/
+.interaction_area {
+    width: 100px;
+    height: 100px;
+}
+
+.bottom_right {
+    border-bottom: 4px solid rgb(43, 39, 39);
+    border-right: 4px solid rgb(43, 39, 39);
+}
+
+.bottom {
+    border-bottom: 4px solid rgb(43, 39, 39);
+}
+
+.right {
+    border-right: 4px solid rgb(43, 39, 39);
+}

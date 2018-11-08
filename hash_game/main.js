@@ -74,47 +74,58 @@ $(document).ready(function(){
 
     function verification() {
         var scoring = 0;
-
         for (var i = 1; i <= 3; i++) {
             scoring = scoring + matrix['a'][i];
         }    
-        win(scoring);
 
+        win(scoring);
+        
+        scoring = 0
         for (var i = 1; i <= 3; i++) {
             scoring = scoring + matrix['b'][i];
-        }    
-        win(scoring);
+        }  
 
+        win(scoring);
+        
+        scoring = 0
         for (var i = 1; i <= 3; i++) {
             scoring = scoring + matrix['c'][i];
         }    
-        win(scoring);
 
+        win(scoring);
+        
+        scoring = 0
         for (var l = 1; l <= 3; l++) {
             scoring = matrix['a'][l] + matrix['b'][l] + matrix['c'][l];
             win(scoring);
         }
 
+        scoring = 0
         scoring = matrix['a'][1] + matrix['b'][2] + matrix['c'][3];
+
         win(scoring);
         
+        scoring = 0
         scoring = matrix['a'][3] + matrix['b'][2] + matrix['c'][1];
+        
         win(scoring);
     }
 
     function win(scoring) {
-        var name1 = $('#input_1').val();
-        var name2 = $('#input_2').val();
-
         if (scoring == 3) {
+            var name1 = $('#input_1').val();
             alert(name1 + ' venceu!!!');
             $('.interaction_area').off();
-        }
-        if (scoring == -3) {
-            alert(name2 + ' venceu!!!');
-            $('.interaction_area').off();
+            $('#reload').show();
         }
 
-        scoring = 0;
+        if (scoring == -3) {
+            var name2 = $('#input_2').val();
+            alert(name2 + ' venceu!!!');
+            $('.interaction_area').off();
+            $('#reload').show();
+        }
+
+        scoring == 0;
     }
 });

@@ -87,28 +87,29 @@ $(document).ready(function(){
 
         win(scoring);
         
-        scoring = 0
+        scoring = 0;
         for (var i = 1; i <= 3; i++) {
             scoring = scoring + matrix['c'][i];
         }    
 
         win(scoring);
         
-        scoring = 0
+        scoring = 0;
         for (var l = 1; l <= 3; l++) {
             scoring = matrix['a'][l] + matrix['b'][l] + matrix['c'][l];
             win(scoring);
         }
 
-        scoring = 0
+        scoring = 0;
         scoring = matrix['a'][1] + matrix['b'][2] + matrix['c'][3];
 
         win(scoring);
         
-        scoring = 0
+        scoring = 0;
         scoring = matrix['a'][3] + matrix['b'][2] + matrix['c'][1];
         
         win(scoring);
+        draw();
     }
 
     function win(scoring) {
@@ -125,7 +126,11 @@ $(document).ready(function(){
             $('.interaction_area').off();
             $('#reload').show();
         }
+    }
 
-        scoring == 0;
+    function draw() {
+        if (round == 9) {
+            $('#reload').show();
+        }
     }
 });

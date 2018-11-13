@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>alo_axel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function a() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            num1 = parseInt(num1);
+            num2= parseInt(num2);
+
+            document.getElementById('img').style.height = num1 + "px";
+            document.getElementById('img').style.width = num2 + "px";
+        }
+
+        function b() {
+            document.getElementById('img').src = "https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-9/38799137_2228958877339897_5503914123542396928_n.jpg?_nc_cat=108&_nc_ht=scontent.frec10-1.fna&oh=e3c30ec24bbc105e0990b65545e5114b&oe=5C7D5B2C";
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Altura">
+    <input type="number" id="num2" placeholder="Largura">
+    <button onclick="a()">aaa</button>
+    <br><br>
+    <img onclick="b()" src="https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-9/37888924_2214676238768161_6928681073433903104_n.jpg?_nc_cat=108&_nc_ht=scontent.frec10-1.fna&oh=2c0226e58ae004a0541ae0f19ae3ac84&oe=5C7E3661" id="img">
+</body>
+</html>
